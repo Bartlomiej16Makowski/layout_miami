@@ -1,5 +1,5 @@
 .footer {
-	background-image: url('/styles/src/footer.png');
+	background-image: url('/src/styles/src/footer.png');
 	height: 180px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -10,7 +10,7 @@
 	}
 
 	@media (min-width: 1260px) {
-		background-image: url('/styles/src/footerbig.png');
+		background-image: url('/src/styles/src/footerbig.png');
 		background-position: center;
 	}
 }
