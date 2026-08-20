@@ -2,48 +2,55 @@
 @use '../utils/mixins.scss' as *;
 
 .container {
-	display: flex;
-	flex-direction: column;
-	gap: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 
-	&__box {
-		@media (min-width: 744px) {
-			display: flex;
-			flex-direction: column;
-		}
-	}
+  &__img {
+    transition: transform 1s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 
-	&__title {
-		font-family: 'Cinzel';
-		font-weight: 700;
-		font-style: Bold;
-		font-size: 24px;
-		text-align: center;
-		color: $main-accent;
-		margin-top: 24px;
-		margin-bottom: 12px;
-	}
+  &__box {
+    @media (min-width: 744px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
-	&__paragraph {
-		font-family: 'Roboto';
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 27px;
-		text-align: center;
-	}
+  &__title {
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    text-align: center;
+    color: $main-accent;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
 
-	@media (min-width: 1260px) {
-		grid-row: 2/3;
-		grid-column: 1/13;
-		@include grid;
+  &__paragraph {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+  }
 
-		&__box {
-			display: grid;
-			grid-column: span 4;
-		}
+  @media (min-width: 1260px) {
+    grid-row: 2/3;
+    grid-column: 1/13;
+    @include grid;
 
-		&__img {
-			height: 320px;
-		}
-	}
+    &__box {
+      display: grid;
+      grid-column: span 4;
+    }
+
+    &__img {
+      height: 320px;
+    }
+  }
 }

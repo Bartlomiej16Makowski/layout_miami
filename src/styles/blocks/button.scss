@@ -1,34 +1,32 @@
 @use '../utils/variables.scss' as *;
 
 .button {
-	background-color: $main-accent;
-	color: white;
-	border: none;
-	height: 56px;
-	width: 280px;
-	font-family: 'Cinzel';
-	font-weight: 700;
-	font-style: Bold;
-	font-size: 16px;
-	text-align: center;
+  background-color: $main-accent;
+  color: white;
+  border: none;
+  height: 56px;
+  width: 280px;
+  font-family: 'Cinzel';
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  text-align: center;
 
-	&--medium {
-			@media (min-width: 744px) {
-			width: 392px;
-		}
-	}
+  &--medium {
+    @media (min-width: 744px) {
+      width: 392px;
+    }
+  }
 
+  &:hover {
+    background-color: #ae1c23;
+  }
 
+  &:active {
+    background-color: #eb343d;
+  }
 
-	&:hover {
-		background-color: #AE1C23;
-	}
-
-	&:active {
-		background-color: #EB343D;
-	}
-
-	@media (min-width: 1260px) {
-		width: 100%;
-	}
+  @media (min-width: 1260px) {
+    width: 100%;
+  }
 }

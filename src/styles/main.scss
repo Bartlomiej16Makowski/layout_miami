@@ -19,7 +19,10 @@
 @import './blocks/link.scss';
 @import './utils/mixins.scss';
 
-
 html {
   scroll-behavior: smooth;
+}
+
+body.page--has-open-menu {
+  overflow: hidden;
 }
