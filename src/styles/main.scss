@@ -3,7 +3,6 @@
 @import './blocks/header.scss';
 @import './blocks/navigation.scss';
 @import './blocks/hours.scss';
-@import './blocks/header.scss';
 @import './blocks/open.scss';
 @import './blocks/content.scss';
 @import './blocks/view.scss';
@@ -21,6 +20,10 @@
 
 html {
   scroll-behavior: smooth;
+
+    display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body.page--has-open-menu {

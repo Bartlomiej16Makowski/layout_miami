@@ -16,7 +16,7 @@
 
     font-family: 'Cinzel';
     font-weight: 700;
-    font-style: Bold;
+   
     font-size: 16px;
     line-height: 27px;
     color: white;
@@ -57,9 +57,8 @@
 
   @media (min-width: 1260px) {
     height: 110px;
-    // @include grid;
 
-    &:has(.navigation__icon:hover) &__box {
+    &:has(.navigation__icon--number:hover) &__box {
       display: block;
     }
   }

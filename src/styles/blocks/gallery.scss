@@ -10,7 +10,6 @@
     color: $main-accent;
     font-family: 'Cinzel';
     font-weight: 700;
-    font-style: Bold;
     font-size: 16px;
     line-height: 27px;
     margin-top: 24px;
@@ -58,7 +57,7 @@
       }
     }
 
-    transition: transform 1s ease;
+    transition: transform 0.3s ease;
     &:hover {
       transform: scale(1.2);
     }
