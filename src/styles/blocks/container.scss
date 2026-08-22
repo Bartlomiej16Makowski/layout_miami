@@ -6,17 +6,22 @@
   flex-direction: column;
   gap: 48px;
 
-  &__img {
-    transition: transform 0.3s ease;
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-
   &__box {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+
     @media (min-width: 744px) {
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
     }
   }
 
@@ -46,10 +51,6 @@
     &__box {
       display: grid;
       grid-column: span 4;
-    }
-
-    &__img {
-      height: 320px;
     }
   }
 }

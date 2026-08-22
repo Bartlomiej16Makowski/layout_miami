@@ -1,16 +1,28 @@
 @use '../utils/mixins.scss' as *;
+@use '../utils/variables.scss' as *;
 
 .header {
   min-height: 100vh;
   box-sizing: border-box;
-  background-image: url('/src/styles/src/nheaderbg.png');
+  background-image: url('/src/images/photos/nheaderbg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 25px 20px;
 
   &__navigation {
+    position: fixed;
+    padding: 12px 20px;
+    background-color: $main-accent;
+    left: 0;
+    right: 0;
+    top: 0;
+    // z-index: 1000;
     grid-column: 1/13;
+
+    @media (min-width: 1260px) {
+      padding: 0 20px;
+    }
   }
 
   @media (min-width: 744px) {
@@ -19,14 +31,14 @@
 
   &__title {
     grid-column: 1/13;
-    margin: 112px auto 0;
+    margin: 160px auto 0;
 
     @media (min-width: 744px) {
-      margin: 145px auto 0;
+      margin: 210px auto 0;
     }
 
     @media (min-width: 1260px) {
-      margin: 10px auto 0;
+      margin: 145px auto 0;
     }
   }
 

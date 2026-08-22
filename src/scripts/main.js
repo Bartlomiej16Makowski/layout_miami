@@ -3,6 +3,7 @@ const form = document.querySelector('#myform');
 if (form) {
   form.addEventListener('submit', function(event) {
     event.preventDefault();
+    console.log('object');
   });
 }
 
