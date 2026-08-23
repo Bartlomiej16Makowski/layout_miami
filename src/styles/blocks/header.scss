@@ -12,29 +12,30 @@
 
   &__navigation {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 12px 20px;
     background-color: $main-accent;
-    left: 0;
-    right: 0;
-    top: 0;
-    // z-index: 1000;
-    grid-column: 1/13;
+    box-sizing: border-box;
+
+    @media (min-width: 744px) {
+      padding: 25px 35px;
+    }
 
     @media (min-width: 1260px) {
-      padding: 0 20px;
+      width: 1260px;
+      left: calc((100% - 1260px) / 2);
     }
   }
 
-  @media (min-width: 744px) {
-    padding: 50px 70px;
-  }
 
   &__title {
     grid-column: 1/13;
     margin: 160px auto 0;
 
     @media (min-width: 744px) {
-      margin: 210px auto 0;
+      margin: 230px auto 0;
     }
 
     @media (min-width: 1260px) {
