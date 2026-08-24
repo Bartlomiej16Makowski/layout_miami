@@ -24,9 +24,21 @@ html {
     display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 
+
+.body {
+
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
 
 body.page--has-open-menu {
   overflow: hidden;

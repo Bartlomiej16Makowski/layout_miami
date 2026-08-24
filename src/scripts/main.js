@@ -19,3 +19,16 @@ function toggleMenuScroll() {
 toggleMenuScroll();
 
 window.addEventListener('hashchange', toggleMenuScroll);
+
+
+const nav = document.querySelector('.navigation');
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+
+  if (window.scrollY > header.offsetHeight) {
+    nav.classList.add('is-scrolled');
+  } else {
+    nav.classList.remove('is-scrolled');
+  }
+});

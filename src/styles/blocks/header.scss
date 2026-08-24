@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 25px 20px;
+  width: 100%;
+  justify-content: center;
 
   &__navigation {
     position: fixed;
@@ -16,16 +18,22 @@
     left: 0;
     width: 100%;
     padding: 12px 20px;
-    background-color: $main-accent;
+    background-color: transparent; 
+  transition: background-color 0.3s ease;
     box-sizing: border-box;
+
+    &.is-scrolled {
+    background-color: $main-accent;
+
+  }
 
     @media (min-width: 744px) {
       padding: 25px 35px;
     }
 
     @media (min-width: 1260px) {
-      width: 1260px;
-      left: calc((100% - 1260px) / 2);
+      // width: 1260px;
+      // left: calc((100% - 1260px) / 2);
     }
   }
 
