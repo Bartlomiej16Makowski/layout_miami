@@ -6,6 +6,7 @@
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 24px;
+    line-height: 27px;
   }
 
   &__name {
@@ -29,8 +30,10 @@
 
   &__anchor {
     text-decoration: none;
-    color: inherit;
+    color: $text;
     transition: color 0.3s ease-in-out;
+    // font-size: 16px;
+    // line-height: 140%;
 
     &:hover {
       color: $address-color;
@@ -38,7 +41,7 @@
   }
 
   &__tel {
-    color: inherit;
+    color: $text;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
