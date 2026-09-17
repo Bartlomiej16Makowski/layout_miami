@@ -55,8 +55,27 @@
     }
   }
 
+  @media (min-width: 744px) {
+    padding: 50px 70px;
+
+
+    &--height {
+      
+ padding-left: 0;
+    padding-right: 0
+    }
+  }
+
   @media (min-width: 1260px) {
-    height: 110px;
+    padding-left: calc((100vw - 1020px) / 2);
+    padding-right: calc((100vw - 1020px) / 2);
+    height: 165px;
+
+    &--height {
+      height: 110px;
+ padding-left: 0;
+    padding-right: 0
+    }
 
     &:has(.navigation__icon--number:hover) &__box {
       display: block;

@@ -16,6 +16,10 @@
   transition: transform 0.3s ease-in-out;
   overflow-y: auto;
 
+   @media (min-width: 744px) {
+padding: 30px 120px;
+  }
+
   &:target {
     transform: translateX(0);
   }
